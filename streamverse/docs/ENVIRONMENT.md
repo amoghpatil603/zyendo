@@ -28,6 +28,15 @@ Get credentials: create a free account at https://www.themoviedb.org/, then
 **Settings → API**. Copy either the "API Read Access Token" (v4) or the "API
 Key" (v3).
 
+### Groq (AI assistant & recommendations)
+
+| Variable | Public | Description |
+| --- | --- | --- |
+| `GROQ_API_KEY` | ❌ | Groq API key. Server-only. |
+| `GROQ_MODEL` | ❌ | Groq model ID. Default: `openai/gpt-oss-20b`. |
+
+The Groq API key must remain server-side and must never use a `NEXT_PUBLIC_` prefix.
+
 ### Supabase (auth & watchlist)
 
 | Variable | Public | Description |
