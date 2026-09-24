@@ -28,7 +28,12 @@ backend and **TMDB** for catalog data.
 Create an account at https://www.themoviedb.org/ and copy an API credential from
 **Settings → API** (v4 read token preferred).
 
-## 3. Vercel
+## 3. Groq
+
+Create a Groq API key and add `GROQ_API_KEY` in Vercel. Optionally set
+`GROQ_MODEL` to a supported model such as `openai/gpt-oss-20b`.
+
+## 4. Vercel
 
 1. Import the GitHub repository into Vercel.
 2. Framework preset: **Next.js** (auto-detected). No build overrides needed.
@@ -40,7 +45,7 @@ Create an account at https://www.themoviedb.org/ and copy an API credential from
 After the first deploy, confirm the Supabase **Redirect URLs** include the exact
 Vercel domain(s), otherwise Google OAuth / email confirmation will fail.
 
-## 4. Verify
+## 5. Verify
 
 Run the full check locally before shipping:
 
