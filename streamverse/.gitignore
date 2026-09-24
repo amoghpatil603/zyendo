@@ -34,6 +34,12 @@ yarn-error.log*
 .env*
 !.env.example
 
+# local tooling
+.kilo/
+
+# nested/experimental projects
+nexa-project-ai/
+
 # vercel
 .vercel
 
