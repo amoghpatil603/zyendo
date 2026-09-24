@@ -49,7 +49,7 @@ export class GroqProvider implements AIProvider {
 
     const encoder = new TextEncoder();
 
-    const candidateModels = [this.model, "qwen/qwen3.6-27b", "openai/gpt-oss-20b"].filter(
+    const candidateModels = [this.model, "qwen/qwen3.8-27b", "openai/gpt-oss-20b"].filter(
       (m, i, arr) => Boolean(m) && arr.indexOf(m) === i
     );
 
@@ -162,7 +162,7 @@ export class GroqProvider implements AIProvider {
     }
     messages.push({ role: "user", content: prompt });
 
-    const candidateModels = [this.model, "qwen/qwen3.6-27b", "openai/gpt-oss-20b"].filter(
+    const candidateModels = [this.model, "qwen/qwen3.8-27b", "openai/gpt-oss-20b"].filter(
       (m, i, arr) => Boolean(m) && arr.indexOf(m) === i
     );
 
