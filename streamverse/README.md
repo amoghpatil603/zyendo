@@ -91,7 +91,7 @@ See `docs/ENVIRONMENT.md` for the full guide. Minimum required variables in `.en
 | --- | --- |
 | `TMDB_API_KEY` | TMDB v3 key for catalog data |
 | `GROQ_API_KEY` | Groq API Key for AI features |
-| `GROQ_MODEL` | Groq model name (e.g. `llama-3.3-70b-versatile`) |
+| `GROQ_MODEL` | Groq model name (default: `openai/gpt-oss-20b`) |
 | `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anon key for public auth |
 | `SUPABASE_SERVICE_ROLE_KEY` | Supabase service role key for server tasks |
@@ -115,12 +115,13 @@ Apply the database migrations to your Supabase project (via the Supabase SQL edi
 
 *(Apply all sql files in the `supabase/migrations/` directory in order)*
 
-## Gemini Setup
+## Groq AI Setup
 
 To enable AI Picks and Assistant features:
-1. Go to Google AI Studio (https://aistudio.google.com/app/apikey).
-2. Create a new API key.
-3. Add it to your `.env.local` as `GEMINI_API_KEY=your_key_here`.
+1. Create a Groq API key in the Groq Console.
+2. Add it to `.env.local` as `GROQ_API_KEY=your_key_here`.
+3. Optionally set `GROQ_MODEL=openai/gpt-oss-20b`.
+
 
 ## Testing
 
