@@ -41,7 +41,7 @@ export const serverEnv = {
     return optional("GROQ_API_KEY");
   },
   get groqModel() {
-    return optional("GROQ_MODEL") ?? "qwen/qwen3.6-27b";
+    return optional("GROQ_MODEL") ?? "openai/gpt-oss-20b";
   },
 };
 
