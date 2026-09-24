@@ -70,6 +70,10 @@ export default async function HomePage() {
       </Suspense>
 
       <Suspense fallback={<RowSkeleton />}>
+        <TopRatedMoviesSection />
+      </Suspense>
+
+      <Suspense fallback={<RowSkeleton />}>
         <NowPlayingMoviesSection />
       </Suspense>
 
