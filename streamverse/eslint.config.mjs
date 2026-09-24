@@ -33,6 +33,7 @@ const eslintConfig = defineConfig([
       "react-hooks/set-state-in-effect": "warn",
       "react-hooks/immutability": "warn",
       "react-hooks/rules-of-hooks": "warn",
+      "react-hooks/static-components": "warn",
       "react-hooks/exhaustive-deps": "warn",
       "prefer-const": "warn",
     },
